@@ -5,48 +5,40 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
 
-    <title>Landing Page 2 - Start Bootstrap Theme</title>
+    <title>Glossaire PE</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="css/landing-page.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/api.js"></script>
   </head>
 
   <body>
 
-    <!-- Navigation -->
-
-
- <div class="row" style="height: 100px;">
-        <img src="img/dico.png" alt="Dico photo" style="height: 80px; left: 20px; position: absolute; top: 15px; width: 80px;"/>
+  <!-- Navigation -->
+  <div class="row" style="height: 100px;">
+      <img src="img/dico.png" alt="Dico photo" style="height: 80px; left: 20px; position: absolute; top: 15px; width: 80px;"/>
       <div class="container">
             <div class="col-12 col-md-10">
-          <span> <input type="text" style="width:500px" class="form-control form-control-lg" placeholder="Entrez l'acronyme ou les 1ères lettres (3 au maximum)">
-           <button type="submit">
-             <img src="img/search.png" alt="Search Logo"> </span>
+              <span>
+                <input type="text" style="width:500px" class="form-control form-control-lg" placeholder="Entrez l'acronyme ou les 1ères lettres (3 au maximum)">
+                <button type="submit">
+                <img src="img/search.png" alt="Search Logo">
+              </span>
             </div>
-  </div>
-      <!-- <div class="content-heading">
-        <input type="text" value="DicoDSI" style="background-color: #EBEBDC;
-        width: 90px;" >
-      </div> -->
-
       </div>
+  </div>
 
 
     <!-- Masthead -->
-    <header class="masthead text- text-center">
+    <header class="masthead text-center">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -67,6 +59,11 @@
     </header>
 
 
+    <div>
+                <p class="greeting-id">The ID is </p>
+                <p class="greeting-content">The content is </p>
+            </div>
+
     <!-- Footer -->
     <footer class="bg-light" style="height:80px">
       <div class="container">
@@ -86,11 +83,7 @@
         </div>
       </div>
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    
   </body>
 
 </html>
