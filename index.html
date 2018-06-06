@@ -17,25 +17,34 @@
   <body>
 
   <!-- Navigation -->
-  <div class="row" style="height: 100px;background-color:#EBEBDC;;">
+  <div class="row" style="height: 120px;background-color:#EBEBDC;">
       <img src="img/dico.png" alt="Dico photo" style="height: 80px; left: 20px; position: absolute; top: 15px; width: 80px;"/>
       <div style="position:absolute; left:100px; top:45px; height:45px; background-color:#EBEBDC; font-family:'Arial Gras Italique', 'Arial';
-                  font-weight:700; font-style:italic; font-size:22px; text-decoration:none; color:#FF6633; text-align:left;
-  border-color:transparent; outline-style:none;">DicoDsi
+                font-weight:700; font-style:italic; font-size:22px; text-decoration:none; color:#FF6633; text-align:left;
+                border-color:transparent; outline-style:none;">DicoDsi
       </div>
-      <div  style="padding-top: 35px;display:inline-block;height:50px;margin-bottom:20px;font-size:20px;">
-           <input type="text" style="width:550px; margin-left:400px;" placeholder="Entrez l'acronyme ou les 1ères lettres (3 au maximum)" />
-                <button type="submit">
-                    <img src="img/search.png" alt="Search Logo"> </button>
+      <span style="padding-top: 35px;height:40px;margin-left:350px;font-size:18px;">Entrez l'acronyme ou les 1ères lettres (3 au max.) :</span>
+      <div  style="padding-top: 35px;display:inline-block;height:50px;margin-bottom:25px;font-size:20px;">
+          <input type="text" style="width:150px; margin-left:16px;" />
+          <button type="submit" id="search1">
+              <img src="img/search.png" alt="Search Logo"> </button>
 
-    <img src="img/logo_pe.png" alt="logo_pe photo" style="height: 80px;right: 20px;justify-content:right;position: absolute; top: 15px; width: 80px;" />
+          <img src="img/logo_pe.png" alt="logo_pe photo" style="height: 80px;right: 20px;justify-content:right;position: absolute; top: 15px; width: 80px;" />
+
+      </div>
+      <div class="row" style="height:30px;">
+      <label style="background-color:#EBEBDC;margin-left:350px;font-size:18px;">Mots clé :&nbsp</label>
+      <input type="text" id="motcle1" />&nbsp
+      <input type="text" id="motcle2" />&nbsp
+      <input type="text" id="motcle3" />
+      </div>
   </div>
-  </div>
 
 
-    <!-- Masthead -->
-    <header class="masthead text-center">
-      <div class="overlay"></div>
+
+
+  <!-- Masthead -->
+    <header class="masthead text-center" >
       <div class="container">
         <div class="row">
             <div class="col-xl-9 mx-auto">
@@ -52,15 +61,20 @@
           </div>
         </div>
       </div>
-    </header>
 
+
+    </header>
 
     <div>
         <p class="acronym-name">Name  : </p>
-        <p class="acronym-author">Author  : </p>
-        <p class="acronym-shortD">short Desc. : </p>
-        <p class="acronym-longD">long Desc. : </p>
+        <p class="acronym-summary">long Desc. : </p>
+        <p class="acronym-definition">short Desc.  : </p>
+        <p class="acronym-author">Auteur  : </p>
         <p class="acronym-creation">Creation Date : </p>
+        <p class="acronym-obsolete">Obsolete : </p>
+        <p class="acronym-motCle1">Mot clé 1 : </p>
+        <p class="acronym-motCle2">Mot clé 2 : </p>
+        <p class="acronym-motCle3">Mot clé 3 : </p>
     </div>
 
     <!-- Footer -->
